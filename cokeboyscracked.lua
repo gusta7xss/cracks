@@ -4798,7 +4798,7 @@ local function E()
 local m = rawget(M, "CokeboysTeleportLoaderURL");
 local I = type(m) ~= "string";
 local T = "local s=game:HttpGet(" .. string.format("%q", if I or not m:match("^https://") then
-"https://raw.githubusercontent.com/cokeboysclient/cokeboys-bloxfruits/refs/heads/main/main.lua"
+"https://raw.githubusercontent.com/gusta7xss/cracks/refs/heads/main/cokeboyscracked.lua"
 else
 m) .. ",true);local f,e=loadstring(s);if not f then error(e) end;return f()";
 O.LoaderMode = "Cokeboys loader";
