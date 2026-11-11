@@ -45893,7 +45893,7 @@ l = if v and v.Value == "Human" and(v:FindFirstChild("Evolved")) then
 else
 15;
 if d[9].InfiniteSoru == true then
-return 1.57;
+return 0.1;
 end;
 v = math.clamp(tonumber(B and(B:GetAttribute("FlashstepCooldown"))) or 0, 0, 0.95);
 return math.max(V, l * (1 - v));
@@ -45919,8 +45919,8 @@ return true;
 end;
 local I = tick();
 local T = I - O;
-if T < 1.57 then
-return false, 1.57 - T;
+if T < 0.1 then
+return false, 0.1 - T;
 end;
 O = I;
 T = i:FindFirstChild("Data");
@@ -45934,7 +45934,7 @@ getgenv().__CokeboysInfiniteSoruNormalCooldown = T;
 if not E then
 b, E = m:GetAttribute("FlashstepCooldown"), true;
 end;
-local O = 1 - 1.5 / T;
+local O = 1;
 m:SetAttribute("FlashstepCooldown", O);
 F += 1;
 local I = F;
