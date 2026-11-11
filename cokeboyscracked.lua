@@ -45893,7 +45893,7 @@ l = if v and v.Value == "Human" and(v:FindFirstChild("Evolved")) then
 else
 15;
 if d[9].InfiniteSoru == true then
-return 0.1;
+return 0.75;
 end;
 v = math.clamp(tonumber(B and(B:GetAttribute("FlashstepCooldown"))) or 0, 0, 0.95);
 return math.max(V, l * (1 - v));
@@ -45919,8 +45919,8 @@ return true;
 end;
 local I = tick();
 local T = I - O;
-if T < 0.1 then
-return false, 0.1 - T;
+if T < 0.75 then
+return false, 0.75 - T;
 end;
 O = I;
 T = i:FindFirstChild("Data");
